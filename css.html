@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coding Beginner</title>
+    <link rel="stylesheet" href="browse.css">
+    <link rel="shortcut icon" href="logo.ico">
+  </head>
+  <body>
+    <div class="page">
+<div class="head">
+    <div class="name">
+    <h1><a href="coding beginner.html">Coding Beginner</a></h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="web.html">Web</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html">Java Script</a></li>
+        <li><a href="ram.html">Rambutan Memorial</a></li>
+        <li><a href="usefullink.html">Useful Link</a></li>
+      </ul>
+    </div>
+  </div>
+<div class="content">
+
+
+
+
+
+
+  <div id="article">
+  <p>
+  <h3>링크가 들어간 글자의 글자색 바꾸기</h3>
+  head 태그에 <br>
+  &lt; style &gt;<br>
+  a {color:red;}<br>
+  &lt; /style&gt;<br>
+  라고 치면 지금부터 이 페이지에 있는 모든 a태그에 해당하는 글자색을 <font color="red">빨간색</font>으로 바꿔줘라는 뜻.
+  <br><br>참고<br>
+  a : selector<br>
+  {} 안의 값 : declaration<br>
+  color : property<br>
+  red : value
+  </p>
+
+  <p>
+    <h3>CSS로 색깔바꾸는 두가지 방법</h3>
+  <ul>
+    <li>스타일태그를 쓴다 : head의 스타일 태그에다가  쓰기</li>
+    <li>스타일 속성을 쓴다 : HTML태그의 속성값으로 노가다로 쓰기</li><br>
+    예를들면 이런식으로 html태그 안에다가 자연스럽게 들어가서 쓰기<br>
+    &lt; a href="2.html" style=color:red; text-decoration:underlin"&gt;
+  </ul>
+  </p>
+
+  <p>
+  <h3>링크에 들어가는 밑줄 없애기 </h3>
+  head 태그에 <br>
+  &lt; style &gt;<br>
+  a {text-decoration: none;}<br>
+  &lt; /style&gt;<br>
+  </p>
+
+  <p>
+  <h3>링크에 들어가는 밑줄 만들기 </h3>
+  head 태그에 <br>
+  &lt; style &gt;<br>
+  a {text-decoration: underline;}<br>
+  &lt; /style&gt;<br>
+  </p>
+
+  <p>
+  <h3>물고기를 잡는 방법</h3>
+  직접 검색해보자 ~<br>
+  h3에 해당하는 텍스트 사이즈를 크게 만들고 싶을때 : CSS  TEXT SIZE Property<br>
+  h3에 해당하는 텍스트를 가운데 정렬 하고싶을때 등등 <br>
+  인터넷에 다 나와있으니까 너가 알아서 찾아서좀 하라고 !!! <br>
+  h3 {font-size:60px; text-align:center;}<br>
+  </p>
+
+  <p>
+    <h3>선택자의 서열정리</h3>
+  <ul>
+    <li>1. id 선택자: 헤드태그 스타일태그에  쓸때 앞에 #을 붙이고 쓴다</li>
+    <li>2. class 선택자 : 헤드태그 스타일태그에  쓸때 앞에 .을 붙이고 쓴다</li>
+    <li>3. 태그 선택자: 헤드태그 스타일태그에 쓸때 그냥 자연스럽게 쓴다 </li><br>
+    <li> 바디에서 지정할때 html 속성값에서 자연스럽게 쓴다. id="active" 이런식으로 ~~</li>
+  </ul>
+  서열이 높은 선택자부터 일처리를 해주고
+  같은 서열끼리의 선택자는 내가 적은 순서대로 일처리를 해주니까 화면에 나타난 모습은
+  내가 마지막으로 적은거를 보여준다 ~<br>
+  예를 들면 ? <br>
+  .saw{color:gray;}<br>
+  .active{color:red;}<br>
+  이라고 적으면 저기에 해당하는 태그에 있는 글자가 빨간 색으로 나온다고 !!!!!!<br><br>
+  이 페이지에 있는 ol태그 중에 하나의 ol태그만 CSS를 걸고 싶으면?<br>
+  &lt;div id="어쩌구저쩌구"&gt; ol 태그 &lt;/div&gt;로 묶고 <br>
+  스타일 태그에 #grid ol{ 자연스럽게 적는다 ;}<br>
+  <ul>
+    <li><a href="web.html">WEB</a></li>
+    <li><a href="html.html">HTML</a></li>
+    <li><a href="css.html">CSS</a></li>
+    <li><a href="JavaScript.html">JavaScript</a></li>
+    <li><a href="grid.html">grid</a></li>
+    <li><a href="mediaquery.html">medaiquery</a></li>
+    <li><a href="ram.html">람부탄 기념관</a></li>
+    <li><a href="usefullink.html">useful link</a></li>
+
+  </ul>
+  여기에서 4개의 링크를 일단 검정으로 하고, HTML은 본 페이지로 회색, CSS는 현재 보고있는
+   페이지로 빨강으로 하고싶다면 ? 내가 서열정리를 해놨으니까 인스펙터에 들어가서 봐 ^^*<br>
+   선택자에서 내용이 중복되면 ?<br>
+   h1{border-width:5px; boder-color:red; border-style:solid; display:inline;}<br>
+   a{border-width:5px; boder-color:red; border-style:solid; display:inline;}<br>
+   h1, a {border:5px solid red;}라고 줄여 ~ 순서는 상관없다
+
+  </p>
+
+  <p><h3>컴퓨터야 내말은 그냥 무시하렴? CSS의 주석</h3>
+  헤드태그 스타일 안에다가 쓰세요<br>
+  /* 어쩌구 저쩌구 */</p>
+
+
+
+  <p><h3>태그에 협소주택 지어주기 ~</h3>
+    헤드에 집을 만들어 주자 ~ 협소주택 ~<br>
+    헤드의 스타일태그에다 쓰세요 ~ <br><br>
+    h1{border-width:5px; boder-color:red; border-style:solid; display:inline;}<br><br>
+
+    반대로 협소주택 태그를 큰집 태그로 바꾸고 싶으면 : display:block;<br>
+    그 넓이를 조정하고싶을때는 : display:block; width:100px;<br>
+    꼴도 보기 싫을때는 : display:none;<br>
+    여백 : padding:20px;<br>
+    테두리와 테두리 간격 : margin-left:20px;<br>
+    협소주택 마루만 깔아주고 싶을때 : border-bottom:1px<br>
+     <br><br>
+
+    참고<br>
+    block line element : 한줄을 다 쓰는 태그, 큰집 태그(element)<br>
+  inline element : 협소주택 태그
+  </p>
+
+  <p><h3>CSS파일에 따로 묶기</h3>
+  프로젝트안에 뭐뭐뭐.css라고 만들고<br>
+  헤드 태그에 :  &lt;link rel="stylesheet" href="뭐뭐뭐.css"&gt;</p>
+    <h2>CSS</h2>
+
+  <p>
+  Cascading Style Sheets (CSS) is a style sheet language used for describing the
+  presentation of a document written in a markup language.[1] Although most often
+  used to set the visual style of web pages and user interfaces written in HTML
+  and XHTML, the language can be applied to any XML document, including plain XML,
+  SVG and XUL, and is applicable to rendering in speech, or on other media. Along
+  with HTML and JavaScript, CSS is a cornerstone technology used by most websites
+  to create visually engaging webpages, user interfaces for web applications,
+  and user interfaces for many mobile applications.
+  </p>
+  </div>
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+</body>
+
+</html>

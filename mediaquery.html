@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>mediaquery</title>
+  <style>
+    div{
+      border:10px solid green; font-size:60px;
+    }
+
+    @media (max-width:800px){
+    div{
+      display:none;
+    }
+  }
+    </style>
+  </head>
+
+  <body>
+<div>
+  responsive
+  </div>
+화면이 작아지면 없어지는 마법<br>
+div로 묶은 다음에 스타일 태그에 @media (min-width:800px){ {div display:none;} }<br>
+화면의 넓이는 최소 800픽셀이다 -> 그러면 {} 이 안에 있는 명령을 따라라 = div 를 안보이게 하는것
+<br>반대는 max겠지 ?<br>
+화면의 크기에 따라 반응해서 화면이 이랬다가 저랬다가 하는것 mediaquery<br>
+CSS페이지에 들어가서 화면을 늘이고 줄여봐라 , 내가 다 해놨다 . 애미야
+    </body>
+</html>

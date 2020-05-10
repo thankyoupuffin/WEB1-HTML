@@ -1,0 +1,41 @@
+html,body{
+  margin: 0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+.page{
+  width: 100%;
+  height:100%;
+  display: table;
+  font-family: Consolas;
+}
+.name h1{
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.menu li{
+  display: inline-block;
+  padding-left:20px; padding-right:20px;
+  padding-top:10px; padding-bottom:10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu ul{
+  display:block;
+  text-align:center;
+  margin:0;
+}
+.head a{
+  text-decoration: none;
+  color:white;
+}
+.head{
+  background :url(coding.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>grid</title>
+<style>
+#grid{
+  border:5px solid pink;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+  div{
+    border:5px solid gray;
+  }
+  </style>
+
+</head>
+
+
+<body>
+  <p>
+    <div id="grid">
+<div>NAVIGATION</div>
+<div>ARTICLE<br>
+  Cascading Style Sheets (CSS) is a style sheet language used for describing the
+  presentation of a document written in a markup language.[1] Although most often
+  used to set the visual style of web pages and user interfaces written in HTML
+  and XHTML, the language can be applied to any XML document, including plain XML,
+  SVG and XUL, and is applicable to rendering in speech, or on other media. Along
+  with HTML and JavaScript, CSS is a cornerstone technology used by most websites
+  to create visually engaging webpages, user interfaces for web applications,
+  and user interfaces for many mobile applications.</div>
+</div>
+</p>
+
+
+<p>
+<h3>div 태그, span 태그</h3>
+&lt;div&gt;디자인만을 하기위해 아무런 의미없이 씌워주는 태그 : block level element &lt;/div&gt;<br>
+&lt;span&gt;div같은 태그인데 inline element 태그&lt;/span&gt;<br><br>
+navigation과 article을 하나의 div로 또 묶어서 id CSS로 협소주택을 만들고 <br><br>
+
+왼쪽에 있는것을 150 px로 고정<br>
+display:grid;<br>
+grid-template-columns:150px 1fr;<br><br>
+
+화면을 3등분해서 2:1로 나눠갖기<br>
+display:grid;<br>
+grid-template-columns:2fr 1fr;<br><br>
+
+<h3> 내가 쓸 기능이 최신기술인가 고인물인가 검색하는 싸이트 </h3>
+<a href="caniuse.com">Can I use . com</a>
+</p>
+</body>
+
+</html>
