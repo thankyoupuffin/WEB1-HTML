@@ -5,20 +5,18 @@ html,body{
   height:100%;
 }
 
-
 .container{
   display:flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-
-
-
 }
 
 .header {
   padding: 6px;
   background-color:rgb(200,200,200, 1.0);
+
+
 }
 
 .header h1{
@@ -49,41 +47,35 @@ html,body{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgba(220, 150, 150, 0.5);
+  background-color: rgba(220, 150, 150, 0.6);
 }
 
 nav {
   position:sticky;
   top:0px;
 }
+
 .nav a{
   text-decoration: none;
   color:white;
   font-size: 20px;
   font-weight: bold;
   font-family: Consolas;
-
 }
-
-
-
-
-
-
 
 
 
 
 .section{
+  border:solid;
+  border-width: thick;
+
 
 display: grid;
 grid-template-columns: 150px 1fr 100px;
 
+
 }
-
-
-
-
 
 .nav2 {
   border:solid;
@@ -92,32 +84,29 @@ grid-template-columns: 150px 1fr 100px;
   display:flex;
   flex-direction: column;
 
-
-
   overflow-y: scroll;
-  height: 100vh;
+    height: 85%;
+}
+
+.nav2 h2{
+  border:solid;
+  color:yellow;
 
 
 }
-
-.nav2  ::-webkit-scrollbar {
-    width: 10px;
-    background-color: black;
-  }
 .article{
 position: static;
 border:solid;
 border-color: green;
-
 }
-
 
 .aside{
   position: static;
   border:solid;
   border-color:blue;
-
 }
+
+
 
 
 
@@ -132,3 +121,65 @@ border-color: green;
   display: none;
 }
 }
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color:  transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color:rgba(240, 150, 150, 0.4);
+}
+::-webkit-scrollbar-button:start {
+  background-color: rgba(220, 150, 150, 0.2);
+}
+::-webkit-scrollbar-button:end {
+  background-color: rgba(220, 150, 150, 0.2);
+}
+
+/*
+  div {
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;   세로축 스크롤바 길이
+    height: 20px;  가로축 스크롤바 길이
+  }
+  ::-webkit-scrollbar-track {
+    background-color: lightblue;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: gray;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: black;
+  }
+  ::-webkit-scrollbar-button {
+    background-color: darkblue;
+    width: 20px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-button:start {
+    background-color: red;  Top, Left 방향의 이동버튼
+  }
+  ::-webkit-scrollbar-button:end {
+    background-color: orange;  Bottom, Right 방향의 이동버튼
+  }
+  ::-webkit-scrollbar-button:vertical:increment {
+  }
+  ::-webkit-scrollbar-button:vertical:decrement {
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: violet;  우측 하단의 코너 부분
+  }
+  ::-webkit-resizer {
+    background-color: green;
+  }
+*/
